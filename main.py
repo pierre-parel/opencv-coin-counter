@@ -47,10 +47,6 @@ def main():
 
     vid = cv2.VideoCapture(0)
     ret, frame = vid.read()
-
-    frame_width = vid.get(cv2.CAP_PROP_FRAME_WIDTH)
-    frame_height = vid.get(cv2.CAP_PROP_FRAME_HEIGHT)
-    video_fps = vid.get(cv2.CAP_PROP_FPS)
     print("Frame Array:")
     print("Array is of type: ", type(frame))
     print("No. of dimensions: ", frame.ndim)
